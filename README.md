@@ -4,24 +4,36 @@
   <img src="public/logo.png" alt="Ourin Logo" width="240" />
   <h3>Ship your startup in record time.</h3>
   <p>An opinionated, production-ready starter kit for modern web applications.</p>
+  
+  <br />
+  
+  <a href="https://ourin-nextjs-starter.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-8B5CF6?style=for-the-badge" alt="Live Demo" />
+  </a>
 </div>
 
 <p align="center">
+  <img src="https://img.shields.io/github/v/release/LuckyArch/ourin-nextjs-starter?style=flat-square&color=8B5CF6" alt="Version" />
   <img src="https://img.shields.io/github/license/LuckyArch/ourin-nextjs-starter?style=flat-square" alt="License" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Next.js-15%2B-black?style=flat-square&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind-4.0-cyan?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Tailwind-4.0-06B6D4?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React" />
 </p>
 
-<div align="center">
-<img src="public/anjay.jpeg" alt="Anjay" />
-</div>
+<p align="center">
+  <a href="#-key-features">Features</a> •
+  <a href="#-getting-started">Quick Start</a> •
+  <a href="https://ourin-nextjs-starter.vercel.app/">Demo</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
 
 ---
 
+
 ## 📖 Table of Contents
 
+-   [What's New](#-whats-new-in-v15)
 -   [Introduction](#-introduction)
 -   [Key Features](#-key-features)
 -   [Technology Stack](#-technology-stack)
@@ -36,6 +48,28 @@
 -   [License](#-license)
 
 ---
+
+## 🆕 What's New in v1.5
+
+### 🔊 Sound System (v1.4)
+- **`useSoundEffects` hook**: Lightweight Web Audio API-based sounds for UI feedback
+- **`useSound` hook**: Full audio file playback with controls
+- **Sound utilities**: `SynthSound`, `SoundManager` for centralized audio management
+
+### 🎵 Spotify Integration (v1.4)
+- **`SpotifyModal` component**: Floating music button with modal player
+- Supports playlists, albums, tracks, or custom Spotify URLs
+- Mute toggle and theme customization
+
+### 📍 UX Enhancements (v1.5)
+- **Scroll Progress Indicator**: Gradient progress bar at the top of the page
+- **Back to Top Button**: Floating button with SVG progress ring
+- **Light/Dark Mode Grid**: Optimized bento grid for both themes
+- **Brand Tech Stack Pills**: Colored badges with framework icons
+- **Performance Optimizations**: Lazy loading with `React.lazy()` and `Suspense`
+
+---
+
 
 ## 🌟 Introduction
 
