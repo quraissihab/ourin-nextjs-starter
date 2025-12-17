@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "Ourin - Next.js Boilerplate",
+    "description": "An opinionated collection of components, hooks, and utilities for your Next.js project."
+  },
+  "nav": {
+    "features": "Features",
+    "fonts": "Fonts",
+    "stats": "Stats",
+    "docs": "Docs",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "badge": "v1.3 — Now with i18n!",
+    "title": "The Ultimate",
+    "titleHighlight": "Next.js",
+    "titleEnd": "Boilerplate",
+    "subtitle": "Ship your startup in record time. Packed with",
+    "utilities": "185+ utilities",
+    "fonts": "16 fonts",
+    "components": "premium components",
+    "and": "and",
+    "ctaPrimary": "Get Started Free",
+    "ctaSecondary": "Star on GitHub"
+  },
+  "stats": {
+    "utilities": "Utility Functions",
+    "fonts": "Google Fonts",
+    "hooks": "Custom Hooks",
+    "css": "Lines of CSS"
+  },
+  "features": {
+    "sectionLabel": "Features",
+    "title": "Everything you need",
+    "subtitle": "A complete foundation for building modern web applications with best practices baked in.",
+    "turbopack": {
+      "title": "Turbopack Ready",
+      "description": "Experience 10x faster builds with Next.js Turbopack. Pre-configured for optimal development experience."
+    },
+    "fonts": {
+      "title": "16 Premium Fonts",
+      "description": "Carefully curated typography system with display, body, serif, mono, and handwriting fonts."
+    },
+    "utilities": {
+      "title": "185+ Utilities",
+      "description": "Massive library of helper functions for strings, arrays, dates, validation, crypto, and more."
+    },
+    "shadcn": {
+      "title": "shadcn/ui Ready",
+      "description": "Pre-configured with shadcn/ui for beautiful, accessible components out of the box."
+    },
+    "typescript": {
+      "title": "Type Safe",
+      "description": "Strict TypeScript throughout. No 'any' types, full IntelliSense support."
+    },
+    "hooks": {
+      "title": "20+ Custom Hooks",
+      "description": "Production-ready hooks for debouncing, data fetching, countdown timers, and more."
+    },
+    "i18n": {
+      "title": "i18n Built-in",
+      "description": "Full internationalization support with next-intl. Easily add multiple languages."
+    },
+    "middleware": {
+      "title": "Middleware Ready",
+      "description": "Pre-configured middleware with security headers, CORS, and authentication patterns."
+    }
+  },
+  "typography": {
+    "sectionLabel": "Typography",
+    "title": "16 Beautiful Fonts",
+    "subtitle": "Pre-loaded with next/font for optimal performance. No layout shift, automatic optimization."
+  },
+  "code": {
+    "sectionLabel": "Developer Experience",
+    "title": "Code that sparks joy",
+    "subtitle": "Intuitive utilities and hooks that feel like they should have been built into React.",
+    "handwritten": "No more utils.ts copy-paste!",
+    "fullyTyped": "Fully Typed",
+    "treeShakeable": "Tree Shakeable",
+    "zeroDeps": "Zero Dependencies"
+  },
+  "updates": {
+    "sectionLabel": "What's New",
+    "title": "Version Updates",
+    "subtitle": "See what's been added in each release.",
+    "v13": {
+      "title": "v1.3 — Internationalization",
+      "description": "Full i18n support with next-intl. English and Indonesian included. Easy to add more languages."
+    },
+    "v12": {
+      "title": "v1.2 — API & Middleware",
+      "description": "Example API routes with CRUD, pagination. Middleware with security headers and CORS."
+    },
+    "v11": {
+      "title": "v1.1 — Extended Typography",
+      "description": "10 new fonts added (total 16). Premium UI redesign with animations and gradient effects."
+    },
+    "v10": {
+      "title": "v1.0 — Initial Release",
+      "description": "145+ utilities, 15+ hooks, 6 fonts, shadcn/ui, Tailwind 4, Next.js 16, React 19."
+    }
+  },
+  "cta": {
+    "title": "Ready to ship faster?",
+    "subtitle": "Start building your next project with Ourin today. Free, open source, and MIT licensed.",
+    "primary": "Start Building",
+    "secondary": "Read Docs"
+  },
+  "footer": {
+    "description": "The ultimate Next.js boilerplate for modern web development. Ship your startup in record time.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "license": "MIT License",
+    "madeWith": "Built with",
+    "by": "by",
+    "starUs": "Star us on GitHub"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "id": "Bahasa Indonesia"
+  }
+}

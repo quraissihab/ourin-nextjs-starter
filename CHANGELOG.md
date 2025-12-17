@@ -7,6 +7,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.3.0] - 2024-12-17
+
+### 🌍 Major Update: Full Internationalization (i18n)
+
+#### Added
+
+##### i18n Infrastructure
+- **next-intl** integration for full internationalization support
+- **`i18n/routing.ts`**: Locale routing configuration (en, id)
+- **`i18n/request.ts`**: Request-based locale detection
+- **`i18n/navigation.ts`**: i18n-aware navigation utilities (Link, useRouter, etc.)
+- **`middleware.ts`**: Updated with next-intl middleware for automatic locale handling
+
+##### Translation Files
+- **`messages/en.json`**: Complete English translations (100+ keys)
+- **`messages/id.json`**: Complete Indonesian translations (100+ keys)
+
+##### UI Enhancements
+- **Language Switcher**: Dropdown component in navbar for switching languages
+- **Grid Background**: Subtle grid pattern overlay with gradient orbs
+- **Updates Timeline**: New section showing version history with visual timeline
+- **Diverse Fonts**: Each feature card uses a different font (Space Grotesk, Poppins, Raleway, etc.)
+- **Improved Hero**: Multi-font headline with gradient highlight
+
+##### New Features Section Items
+- **i18n Built-in**: Highlighting the internationalization feature
+- **Middleware Ready**: Highlighting the security middleware
+
+#### Changed
+- Restructured app directory to use `[locale]` dynamic routing
+- Root `page.tsx` now redirects to default locale
+- Updated layout to use `NextIntlClientProvider`
+- All static text now uses `useTranslations()` hook
+
+---
+
 ## [1.2.0] - 2024-12-17
 
 ### 🚀 Major Update: API Routes, Middleware, Extended Utilities

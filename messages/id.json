@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "Ourin - Boilerplate Next.js",
+    "description": "Koleksi komponen, hooks, dan utilitas teropini untuk proyek Next.js Anda."
+  },
+  "nav": {
+    "features": "Fitur",
+    "fonts": "Font",
+    "stats": "Statistik",
+    "docs": "Dokumentasi",
+    "getStarted": "Mulai Sekarang"
+  },
+  "hero": {
+    "badge": "v1.3 — Sekarang dengan i18n!",
+    "title": "Boilerplate",
+    "titleHighlight": "Next.js",
+    "titleEnd": "Terbaik",
+    "subtitle": "Bangun startup Anda dalam waktu singkat. Dilengkapi dengan",
+    "utilities": "185+ utilitas",
+    "fonts": "16 font",
+    "components": "komponen premium",
+    "and": "dan",
+    "ctaPrimary": "Mulai Gratis",
+    "ctaSecondary": "Star di GitHub"
+  },
+  "stats": {
+    "utilities": "Fungsi Utilitas",
+    "fonts": "Google Fonts",
+    "hooks": "Custom Hooks",
+    "css": "Baris CSS"
+  },
+  "features": {
+    "sectionLabel": "Fitur",
+    "title": "Semua yang Anda butuhkan",
+    "subtitle": "Fondasi lengkap untuk membangun aplikasi web modern dengan praktik terbaik bawaan.",
+    "turbopack": {
+      "title": "Siap Turbopack",
+      "description": "Rasakan build 10x lebih cepat dengan Next.js Turbopack. Dikonfigurasi untuk pengalaman development optimal."
+    },
+    "fonts": {
+      "title": "16 Font Premium",
+      "description": "Sistem tipografi yang dikurasi dengan font display, body, serif, mono, dan tulisan tangan."
+    },
+    "utilities": {
+      "title": "185+ Utilitas",
+      "description": "Library helper function untuk string, array, tanggal, validasi, crypto, dan lainnya."
+    },
+    "shadcn": {
+      "title": "Siap shadcn/ui",
+      "description": "Dikonfigurasi dengan shadcn/ui untuk komponen yang indah dan aksesibel."
+    },
+    "typescript": {
+      "title": "Type Safe",
+      "description": "TypeScript ketat di seluruh proyek. Tanpa tipe 'any', dukungan IntelliSense penuh."
+    },
+    "hooks": {
+      "title": "20+ Custom Hooks",
+      "description": "Hooks siap produksi untuk debouncing, data fetching, countdown timer, dan lainnya."
+    },
+    "i18n": {
+      "title": "i18n Bawaan",
+      "description": "Dukungan internasionalisasi penuh dengan next-intl. Mudah menambah bahasa baru."
+    },
+    "middleware": {
+      "title": "Middleware Siap",
+      "description": "Middleware yang dikonfigurasi dengan header keamanan, CORS, dan pola autentikasi."
+    }
+  },
+  "typography": {
+    "sectionLabel": "Tipografi",
+    "title": "16 Font Indah",
+    "subtitle": "Dimuat dengan next/font untuk performa optimal. Tanpa layout shift, optimisasi otomatis."
+  },
+  "code": {
+    "sectionLabel": "Pengalaman Developer",
+    "title": "Kode yang membahagiakan",
+    "subtitle": "Utilitas dan hooks intuitif yang seharusnya sudah ada di React.",
+    "handwritten": "Tidak perlu copy-paste utils.ts lagi!",
+    "fullyTyped": "Fully Typed",
+    "treeShakeable": "Tree Shakeable",
+    "zeroDeps": "Tanpa Dependensi"
+  },
+  "updates": {
+    "sectionLabel": "Yang Baru",
+    "title": "Update Versi",
+    "subtitle": "Lihat apa yang ditambahkan di setiap rilis.",
+    "v13": {
+      "title": "v1.3 — Internasionalisasi",
+      "description": "Dukungan i18n penuh dengan next-intl. Bahasa Inggris dan Indonesia tersedia. Mudah menambah bahasa lain."
+    },
+    "v12": {
+      "title": "v1.2 — API & Middleware",
+      "description": "Contoh API routes dengan CRUD, pagination. Middleware dengan header keamanan dan CORS."
+    },
+    "v11": {
+      "title": "v1.1 — Tipografi Diperluas",
+      "description": "10 font baru ditambahkan (total 16). Redesain UI premium dengan animasi dan efek gradien."
+    },
+    "v10": {
+      "title": "v1.0 — Rilis Awal",
+      "description": "145+ utilitas, 15+ hooks, 6 font, shadcn/ui, Tailwind 4, Next.js 16, React 19."
+    }
+  },
+  "cta": {
+    "title": "Siap kirim lebih cepat?",
+    "subtitle": "Mulai bangun proyek Anda berikutnya dengan Ourin hari ini. Gratis, open source, dan berlisensi MIT.",
+    "primary": "Mulai Membangun",
+    "secondary": "Baca Dokumentasi"
+  },
+  "footer": {
+    "description": "Boilerplate Next.js terbaik untuk pengembangan web modern. Bangun startup Anda dalam waktu singkat.",
+    "quickLinks": "Tautan Cepat",
+    "legal": "Legal",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan",
+    "license": "Lisensi MIT",
+    "madeWith": "Dibuat dengan",
+    "by": "oleh",
+    "starUs": "Star kami di GitHub"
+  },
+  "languageSwitcher": {
+    "label": "Bahasa",
+    "en": "English",
+    "id": "Bahasa Indonesia"
+  }
+}
