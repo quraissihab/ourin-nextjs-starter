@@ -46,24 +46,48 @@ function GridBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
       {/* Gradient Orbs */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-violet-500/20 to-fuchsia-500/10 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-gradient-to-br from-cyan-500/10 to-blue-500/20 blur-[120px] animate-pulse" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-[40%] left-[30%] w-[25%] h-[25%] rounded-full bg-primary/5 blur-[80px]" />
+      <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] rounded-full bg-gradient-to-br from-violet-500/30 to-fuchsia-500/15 blur-[100px] animate-pulse" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] rounded-full bg-gradient-to-br from-cyan-500/15 to-blue-500/30 blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-[30%] right-[20%] w-[30%] h-[30%] rounded-full bg-emerald-500/10 blur-[80px]" />
+      <div className="absolute bottom-[30%] left-[20%] w-[25%] h-[25%] rounded-full bg-primary/10 blur-[60px]" />
       
-      {/* Grid Pattern */}
+      {/* Main Grid Pattern - More visible */}
       <div 
-        className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.04] dark:opacity-[0.06]"
         style={{
           backgroundImage: `
-            linear-gradient(to right, currentColor 1px, transparent 1px),
-            linear-gradient(to bottom, currentColor 1px, transparent 1px)
+            linear-gradient(to right, rgb(var(--foreground-rgb, 0 0 0) / 0.3) 1px, transparent 1px),
+            linear-gradient(to bottom, rgb(var(--foreground-rgb, 0 0 0) / 0.3) 1px, transparent 1px)
           `,
-          backgroundSize: '60px 60px',
+          backgroundSize: '50px 50px',
         }}
       />
       
-      {/* Radial Fade */}
-      <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-background" />
+      {/* Dotted Pattern Overlay */}
+      <div 
+        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+        style={{
+          backgroundImage: `radial-gradient(circle, currentColor 1px, transparent 1px)`,
+          backgroundSize: '25px 25px',
+        }}
+      />
+      
+      {/* Diagonal Lines for texture */}
+      <div 
+        className="absolute inset-0 opacity-[0.015] dark:opacity-[0.02]"
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            currentColor 35px,
+            currentColor 36px
+          )`,
+        }}
+      />
+      
+      {/* Radial Fade from center */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--background)_70%)]" />
     </div>
   );
 }
@@ -148,8 +172,9 @@ function FloatingNav() {
         
         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-foreground/70">
           <a href="#features" className="hover:text-foreground transition-colors">{t('features')}</a>
+          <a href="#hooks" className="hover:text-foreground transition-colors">Hooks</a>
+          <a href="#utilities" className="hover:text-foreground transition-colors">Utils</a>
           <a href="#fonts" className="hover:text-foreground transition-colors">{t('fonts')}</a>
-          <a href="#updates" className="hover:text-foreground transition-colors">Updates</a>
         </div>
 
         <div className="flex items-center gap-2">
@@ -347,6 +372,140 @@ function FontShowcase() {
     </div>
   );
 }
+
+// --- Hooks Showcase ---
+function HooksShowcase() {
+  const hooks = [
+    { name: 'useDebounce', desc: 'Delay value updates', font: 'font-space', color: 'from-violet-500/20 to-purple-500/10' },
+    { name: 'useFetch', desc: 'Declarative data fetching', font: 'font-poppins', color: 'from-blue-500/20 to-cyan-500/10' },
+    { name: 'useLocalStorage', desc: 'Persistent state', font: 'font-raleway', color: 'from-emerald-500/20 to-green-500/10' },
+    { name: 'useMediaQuery', desc: 'Responsive breakpoints', font: 'font-manrope', color: 'from-orange-500/20 to-amber-500/10' },
+    { name: 'useCountdown', desc: 'Timer with controls', font: 'font-inter', color: 'from-pink-500/20 to-rose-500/10' },
+    { name: 'useNetworkStatus', desc: 'Online/offline tracking', font: 'font-nunito', color: 'from-teal-500/20 to-cyan-500/10' },
+    { name: 'useIntersectionObserver', desc: 'Viewport detection', font: 'font-dm', color: 'from-indigo-500/20 to-blue-500/10' },
+    { name: 'useKeyboardShortcut', desc: 'Hotkey bindings', font: 'font-source', color: 'from-red-500/20 to-orange-500/10' },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {hooks.map((hook, i) => (
+        <motion.div
+          key={hook.name}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.05 }}
+          whileHover={{ y: -5, transition: { duration: 0.2 } }}
+          className={`relative p-5 rounded-2xl border border-border/50 hover:border-primary/30 transition-all overflow-hidden bg-gradient-to-br ${hook.color} backdrop-blur-sm group`}
+        >
+          <div className="absolute top-2 right-2 opacity-10 group-hover:opacity-20 transition-opacity">
+            <Boxes className="w-12 h-12" />
+          </div>
+          <div className={`font-mono text-xs text-primary/80 mb-1`}>hook</div>
+          <h4 className={`${hook.font} font-bold text-base mb-1 group-hover:text-primary transition-colors`}>
+            {hook.name}
+          </h4>
+          <p className="text-xs text-muted-foreground leading-relaxed">{hook.desc}</p>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+// --- Utilities Showcase ---
+function UtilitiesShowcase() {
+  const categories = [
+    { 
+      name: 'String', 
+      count: 18, 
+      examples: ['capitalize', 'slugify', 'truncate'], 
+      font: 'font-display',
+      icon: <Type className="w-5 h-5" />,
+      color: 'from-violet-500 to-purple-600'
+    },
+    { 
+      name: 'Array', 
+      count: 22, 
+      examples: ['chunk', 'shuffle', 'groupBy'], 
+      font: 'font-space',
+      icon: <Layers className="w-5 h-5" />,
+      color: 'from-blue-500 to-cyan-600'
+    },
+    { 
+      name: 'Date', 
+      count: 12, 
+      examples: ['formatDate', 'timeAgo', 'daysBetween'], 
+      font: 'font-poppins',
+      icon: <History className="w-5 h-5" />,
+      color: 'from-emerald-500 to-teal-600'
+    },
+    { 
+      name: 'Validation', 
+      count: 10, 
+      examples: ['isEmail', 'isURL', 'validatePassword'], 
+      font: 'font-raleway',
+      icon: <Shield className="w-5 h-5" />,
+      color: 'from-orange-500 to-amber-600'
+    },
+    { 
+      name: 'Crypto', 
+      count: 14, 
+      examples: ['uuid', 'sha256', 'base64Encode'], 
+      font: 'font-manrope',
+      icon: <Code2 className="w-5 h-5" />,
+      color: 'from-pink-500 to-rose-600'
+    },
+    { 
+      name: 'Async', 
+      count: 10, 
+      examples: ['retry', 'debounce', 'throttle'], 
+      font: 'font-inter',
+      icon: <Zap className="w-5 h-5" />,
+      color: 'from-indigo-500 to-violet-600'
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {categories.map((cat, i) => (
+        <motion.div
+          key={cat.name}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.08 }}
+          whileHover={{ y: -8, transition: { duration: 0.2 } }}
+          className="relative p-6 rounded-2xl border border-border/50 hover:border-primary/30 transition-all bg-card/50 backdrop-blur-sm group overflow-hidden"
+        >
+          {/* Gradient accent */}
+          <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${cat.color}`} />
+          
+          <div className="flex items-start justify-between mb-4">
+            <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cat.color} flex items-center justify-center text-white shadow-lg`}>
+              {cat.icon}
+            </div>
+            <span className="px-3 py-1 rounded-full bg-muted text-xs font-bold text-muted-foreground">
+              {cat.count}+
+            </span>
+          </div>
+          
+          <h4 className={`${cat.font} font-bold text-xl mb-2 group-hover:text-primary transition-colors`}>
+            {cat.name} Utils
+          </h4>
+          
+          <div className="flex flex-wrap gap-1.5">
+            {cat.examples.map((ex) => (
+              <code key={ex} className="px-2 py-0.5 rounded bg-muted/50 text-xs font-mono text-muted-foreground">
+                {ex}()
+              </code>
+            ))}
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
 
 // --- Main Page Component ---
 export default function Home() {
@@ -553,6 +712,60 @@ export default function Home() {
 
           <div className="max-w-4xl mx-auto">
             <FontShowcase />
+          </div>
+        </div>
+      </section>
+
+      {/* === Hooks Section === */}
+      <section id="hooks" className="py-20 md:py-28 relative">
+        <div className="container px-4 md:px-6 mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-2xl mx-auto mb-12"
+          >
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider font-mono">
+              <Boxes className="w-4 h-4 inline mr-2" />
+              Custom Hooks
+            </span>
+            <h2 className="text-3xl md:text-5xl font-display font-bold mt-3 mb-4 tracking-tight">
+              20+ React Hooks
+            </h2>
+            <p className="text-lg text-muted-foreground font-sans">
+              Production-ready hooks for common patterns. Fully typed, tree-shakeable, zero dependencies.
+            </p>
+          </motion.div>
+
+          <div className="max-w-5xl mx-auto">
+            <HooksShowcase />
+          </div>
+        </div>
+      </section>
+
+      {/* === Utilities Section === */}
+      <section id="utilities" className="py-20 md:py-28 bg-muted/30 relative">
+        <div className="container px-4 md:px-6 mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-2xl mx-auto mb-12"
+          >
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider font-mono">
+              <Package className="w-4 h-4 inline mr-2" />
+              Utility Library
+            </span>
+            <h2 className="text-3xl md:text-5xl font-space font-bold mt-3 mb-4 tracking-tight">
+              185+ Helper Functions
+            </h2>
+            <p className="text-lg text-muted-foreground font-sans">
+              Categorized, documented utilities for strings, arrays, dates, validation, and more.
+            </p>
+          </motion.div>
+
+          <div className="max-w-5xl mx-auto">
+            <UtilitiesShowcase />
           </div>
         </div>
       </section>

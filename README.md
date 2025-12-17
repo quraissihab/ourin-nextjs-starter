@@ -66,10 +66,17 @@ The entire codebase is strictly typed with **TypeScript 5**, ensuring type safet
 -   **Middleware**: Pre-configured with security headers, CORS, logging, and auth patterns.
 -   **Strict TypeScript**: No `any` types. Full type safety across the entire project.
 
+### 🌍 Internationalization (i18n)
+-   **next-intl Integration**: Full i18n support out of the box with next-intl.
+-   **Multi-Language Ready**: English and Indonesian translations included, easy to add more.
+-   **Language Switcher**: Beautiful dropdown component for switching between locales.
+-   **Automatic Locale Detection**: Middleware handles locale routing and detection.
+
 ### 🧩 Premium UI Components
 -   **Floating Navbar**: A modern, animated navigation bar with scroll-aware visibility.
--   **Bento Grid**: A responsive grid layout perfect for feature showcases.
--   **Code Typewriter**: An interactive code block with a realistic typing animation.
+-   **Grid Background**: Multi-layer background with grid, dots, and diagonal patterns.
+-   **Hooks Showcase**: Interactive cards showing all available hooks with diverse fonts.
+-   **Utils Showcase**: Category cards with gradient icons for utility functions.
 -   **Copy Command**: A sleek terminal-style pill for CLI commands.
 
 ---
