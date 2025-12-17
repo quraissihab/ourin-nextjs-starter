@@ -567,7 +567,7 @@ export default function Home() {
   const t = useTranslations();
   
   return (
-    <div className="min-h-screen bg-background text-foreground selection:bg-primary/30 font-sans overflow-x-hidden">
+    <div className="min-h-screen text-foreground selection:bg-primary/30 font-sans overflow-x-hidden">
       <GridBackground />
       <FloatingNav />
       

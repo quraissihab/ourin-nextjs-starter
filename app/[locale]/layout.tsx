@@ -89,7 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${fontVariables} antialiased font-sans`}>
+      <body className={`${fontVariables} antialiased font-sans bg-background`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
