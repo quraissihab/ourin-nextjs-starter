@@ -3,6 +3,7 @@
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import {
   Github,
   Zap,
@@ -54,9 +55,13 @@ function FloatingNav() {
     >
       <div className="glass-card px-4 md:px-6 py-3 flex items-center justify-between rounded-full border border-white/10 shadow-lg backdrop-blur-md bg-background/80 dark:bg-background/60">
         <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-primary to-accent flex items-center justify-center shadow-glow-primary">
-            <span className="text-primary-foreground font-display font-bold text-lg">O</span>
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Ourin Logo"
+            width={32}
+            height={32}
+            className="rounded-full shadow-glow-primary"
+          />
           <span className="font-display font-bold text-lg tracking-tight">Ourin</span>
         </div>
         
@@ -141,8 +146,8 @@ function CodeTypewriter({ code }: { code: string }) {
 
 function CopyCommand() {
   const [copied, setCopied] = useState(false);
-  const command = "npx create-next-app -e .../ourin";
-  const fullCommand = "npx create-next-app -e https://github.com/yourusername/ourin";
+  const command = "npx create-next-app -e https://github.com/LuckyArch/ourin-nextjs-starter";
+  const fullCommand = "npx create-next-app -e https://github.com/LuckyArch/ourin-nextjs-starter";
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(fullCommand);
@@ -404,9 +409,13 @@ export default function Home() {
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-3">
-               <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center border border-primary/20">
-                <span className="text-primary font-display font-bold">O</span>
-              </div>
+               <Image
+                 src="/logo.png"
+                 alt="Ourin Logo"
+                 width={32}
+                 height={32}
+                 className="rounded-lg"
+               />
               <p className="text-sm text-muted-foreground font-inter">
                 Built with ❤️ by Your Name
               </p>
