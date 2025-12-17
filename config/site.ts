@@ -11,15 +11,16 @@ export const siteConfig = {
   
   // Links
   links: {
-    github: 'https://github.com/yourusername/ourin',
-    twitter: 'https://twitter.com/yourusername',
+    github: 'https://github.com/LuckyArch/ourin-nextjs-starter',
+    twitter: 'https://twitter.com/LuckyArch',
     docs: '/docs',
   },
   
   // Creator info
   creator: {
-    name: 'Your Name',
-    url: 'https://yourwebsite.com',
+    name: 'Fauzan Adyatma P',
+    username: 'LuckyArch',
+    url: 'https://github.com/LuckyArch',
   },
   
   // SEO defaults
@@ -46,9 +47,10 @@ export const siteConfig = {
   
   // Localization
   i18n: {
-    defaultLocale: 'id',
-    locales: ['id', 'en'],
+    defaultLocale: 'en',
+    locales: ['en', 'id'],
   },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
+

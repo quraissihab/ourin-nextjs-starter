@@ -146,7 +146,7 @@ function CodeTypewriter({ code }: { code: string }) {
 
 function CopyCommand() {
   const [copied, setCopied] = useState(false);
-  const command = "npx create-next-app -e https://github.com/LuckyArch/ourin-nextjs-starter";
+  const displayCommand = "npx create-next-app -e .../ourin-nextjs-starter";
   const fullCommand = "npx create-next-app -e https://github.com/LuckyArch/ourin-nextjs-starter";
 
   const handleCopy = async () => {
@@ -160,12 +160,12 @@ function CopyCommand() {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.01 }}
-      className="relative flex items-center justify-between w-full max-w-md mx-auto bg-[#1e1e1e] dark:bg-[#121212] rounded-full p-1.5 shadow-2xl ring-1 ring-white/10"
+      className="relative flex items-center justify-between w-full max-w-xl mx-auto bg-[#1e1e1e] dark:bg-[#121212] rounded-full p-1.5 shadow-2xl ring-1 ring-white/10"
     >
       <div className="flex items-center gap-3 pl-4 overflow-hidden">
         <span className="text-gray-500 shrink-0 font-mono">{`>_`}</span>
-        <code className="text-sm text-gray-300 font-mono truncate">
-          {command}
+        <code className="text-xs sm:text-sm text-gray-300 font-mono truncate">
+          {displayCommand}
         </code>
       </div>
       
@@ -405,27 +405,71 @@ export default function Home() {
       </section>
 
       {/* --- Footer --- */}
-      <footer className="py-12 border-t border-border/40 bg-background/50 backdrop-blur-md">
+      <footer className="py-16 border-t border-border/40 bg-background/50 backdrop-blur-md">
         <div className="container px-4 md:px-6 mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-3">
-               <Image
-                 src="/logo.png"
-                 alt="Ourin Logo"
-                 width={32}
-                 height={32}
-                 className="rounded-lg"
-               />
-              <p className="text-sm text-muted-foreground font-inter">
-                Built with ❤️ by Your Name
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            {/* Brand */}
+            <div className="md:col-span-2">
+              <div className="flex items-center gap-3 mb-4">
+                <Image
+                  src="/logo.png"
+                  alt="Ourin Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-lg"
+                />
+                <span className="font-display font-bold text-xl">Ourin</span>
+              </div>
+              <p className="text-muted-foreground max-w-sm leading-relaxed">
+                The ultimate Next.js boilerplate for modern web development. Ship your startup in record time with 145+ utilities and premium components.
               </p>
             </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-display font-bold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#features" className="hover:text-primary transition-colors">Features</a></li>
+                <li><a href="#components" className="hover:text-primary transition-colors">Components</a></li>
+                <li><a href="https://github.com/LuckyArch/ourin-nextjs-starter" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Documentation</a></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="font-display font-bold mb-4">Legal</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-primary transition-colors">Terms of Service</a></li>
+                <li><a href="https://github.com/LuckyArch/ourin-nextjs-starter/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">MIT License</a></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-foreground font-inter">
+              © {new Date().getFullYear()} Ourin. Built with ❤️ by{' '}
+              <a 
+                href="https://github.com/LuckyArch" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Fauzan Adyatma P
+              </a>
+            </p>
             
-            <div className="flex gap-6 text-sm text-muted-foreground font-medium font-sans">
-              <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms</a>
-              <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-              <a href="#" className="hover:text-primary transition-colors">GitHub</a>
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://github.com/LuckyArch/ourin-nextjs-starter" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="GitHub"
+              >
+                <Github className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>

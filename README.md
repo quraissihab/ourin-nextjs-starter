@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Tailwind-4.0-cyan?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React" />
 </p>
+<img src="public/anjay.jpeg" alt="Anjay" />
 
 ---
 
@@ -93,36 +94,39 @@ Before you begin, ensure you have the following installed:
 -   **pnpm**: Recommended package manager ([Installation](https://pnpm.io/installation))
     -   Alternatively, you can use `npm` or `yarn`.
 
-### Installation Steps
+### Quick Start (Recommended)
+
+The fastest way to get started is using `create-next-app` with the `-e` (example) flag:
+
+```bash
+npx create-next-app -e https://github.com/LuckyArch/ourin-nextjs-starter my-app
+cd my-app
+pnpm dev
+```
+
+This will create a new Next.js project using Ourin as the template in a folder called `my-app`.
+
+### Manual Installation
+
+Alternatively, you can clone the repository directly:
 
 1.  **Clone the repository:**
-    Open your terminal and run the following command to clone the project to your local machine.
     ```bash
     git clone https://github.com/LuckyArch/ourin-nextjs-starter.git
-    ```
-
-2.  **Navigate into the project directory:**
-    ```bash
     cd ourin-nextjs-starter
     ```
 
-3.  **Install dependencies:**
-    We recommend using `pnpm` for its speed and efficiency.
+2.  **Install dependencies:**
     ```bash
     pnpm install
     ```
-    If you prefer `npm`:
-    ```bash
-    npm install
-    ```
 
-4.  **Start the development server:**
-    This will launch the application in development mode with Hot Module Replacement.
+3.  **Start the development server:**
     ```bash
     pnpm dev
     ```
 
-5.  **Open in your browser:**
+4.  **Open in your browser:**
     Navigate to [http://localhost:3000](http://localhost:3000). You should see the Ourin homepage.
 
 ---
@@ -136,7 +140,9 @@ ourin-nextjs-starter/
 ├── app/                        # Next.js App Router
 │   ├── globals.css             # Global styles, Tailwind config, theme variables (850+ lines)
 │   ├── layout.tsx              # Root layout: Fonts, ThemeProvider, metadata
-│   └── page.tsx                # Homepage: Hero, Features, Code section, Footer
+│   ├── page.tsx                # Homepage: Hero, Features, Code section, Footer
+│   ├── privacy/                # Privacy Policy page
+│   └── terms/                  # Terms of Service page
 │
 ├── components/                 # Reusable React components
 │   ├── ui/                     # Shadcn/UI primitive components
@@ -480,9 +486,10 @@ This means you can use this boilerplate for personal and commercial projects wit
 ---
 
 <div align="center">
-  <p>Built with ❤️ by <a href="https://github.com/LuckyArch">FauzanAPP</a></p>
+  <p>Built with ❤️ by <a href="https://github.com/LuckyArch">Fauzan Adyatma P</a></p>
   <p>
     <a href="https://github.com/LuckyArch/ourin-nextjs-starter">GitHub</a> •
     <a href="#">Demo (Coming Soon)</a>
   </p>
 </div>
+
