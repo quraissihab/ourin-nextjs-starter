@@ -7,6 +7,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2024-12-17
+
+### 🚀 Major Update: API Routes, Middleware, Extended Utilities
+
+#### Added
+
+##### Middleware (`middleware.ts`)
+- Request logging with timestamps
+- Security headers (X-Frame-Options, X-Content-Type-Options, Referrer-Policy)
+- CORS headers for API routes
+- Protected routes pattern (commented example)
+- Rate limiting headers
+- Locale detection example
+- Maintenance mode example
+
+##### Example API Routes
+- **`/api/health`**: Health check endpoint with uptime, version, timestamp
+- **`/api/users`**: Full CRUD with pagination, filtering, search
+- **`/api/users/[id]`**: Dynamic route for GET, PUT, DELETE operations
+
+##### New Utility Modules (40+ Functions)
+
+**`lib/utils/browser.ts`** — Device & Browser Detection
+- `isServer`, `isBrowser`, `isMobile`, `isIOS`, `isAndroid`
+- `isTouchDevice`, `isSafari`, `isChrome`, `isFirefox`
+- `prefersReducedMotion`, `prefersDarkMode`, `getDevicePixelRatio`
+- `supportsWebGL`, `supportsWebP`, `supportsIntersectionObserver`
+- `getConnectionType`, `isOnline`, `getBatteryLevel`
+
+**`lib/utils/async.ts`** — Async Helpers
+- `sleep`, `retry` (with exponential backoff), `withTimeout`
+- `parallelLimit` (concurrency control), `debounce`, `throttle`
+- `memoize`, `createDeferred`, `poll`, `once`
+
+**`lib/utils/crypto.ts`** — Security Utilities
+- `uuid`, `nanoid`, `randomString`, `generateToken`
+- `sha256`, `sha512` (hashing)
+- `base64Encode`, `base64Decode`
+- `timingSafeEqual`, `maskString`, `maskEmail`, `generateCSRFToken`
+
+##### New Hooks (5 Hooks, Total: 20+)
+- **`useNetworkStatus`**: Track online/offline and connection type
+- **`useFetch`**: Declarative data fetching with refetch interval
+- **`useCountdown`**: Timer with start, pause, reset, restart
+- **`useElementSize`**: Track element dimensions with ResizeObserver
+- **`useInterval`**: Declarative setInterval with pause support
+
+#### Changed
+- Updated utility count from 145+ to 185+ functions
+- Updated hook count from 15+ to 20+ hooks
+- All new exports added to barrel files
+
+---
+
 ## [1.1.0] - 2024-12-17
 
 ### 🚀 Major Update: Extended Typography & Premium UI

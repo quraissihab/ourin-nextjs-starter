@@ -196,3 +196,57 @@ export {
   createFocusTrap,
   printElement,
 } from './dom';
+
+// Browser detection utilities (New in v1.2)
+export {
+  isServer,
+  isBrowser,
+  isMobile as isMobileDevice,
+  isIOS,
+  isAndroid,
+  isTouchDevice as hasTouchScreen,
+  isSafari,
+  isChrome,
+  isFirefox,
+  prefersReducedMotion,
+  prefersDarkMode,
+  getDevicePixelRatio,
+  supportsWebGL,
+  supportsWebP,
+  supportsIntersectionObserver,
+  getConnectionType,
+  isOnline,
+  getBatteryLevel,
+} from './browser';
+
+// Async utilities (New in v1.2)
+export {
+  sleep as delay,
+  retry as retryAsync,
+  withTimeout,
+  parallelLimit,
+  debounce,
+  throttle,
+  memoize,
+  createDeferred,
+  poll,
+  once,
+} from './async';
+
+// Crypto utilities (New in v1.2)
+export {
+  uuid,
+  nanoid,
+  randomString as generateRandomString,
+  sha256,
+  sha512,
+  base64Encode,
+  base64Decode,
+  generateToken,
+  xorEncrypt,
+  timingSafeEqual,
+  maskString as maskSensitiveData,
+  maskEmail,
+  generateCSRFToken,
+} from './crypto';
+

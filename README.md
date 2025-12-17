@@ -1,7 +1,7 @@
 # Ourin - The Ultimate Next.js Boilerplate
 
 <div align="center">
-  <img src="public/logo.png" alt="Ourin Logo" width="120" />
+  <img src="public/logo.png" alt="Ourin Logo" width="240" />
   <h3>Ship your startup in record time.</h3>
   <p>An opinionated, production-ready starter kit for modern web applications.</p>
 </div>
@@ -13,7 +13,10 @@
   <img src="https://img.shields.io/badge/Tailwind-4.0-cyan?style=flat-square&logo=tailwindcss" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react" alt="React" />
 </p>
+
+<div align="center">
 <img src="public/anjay.jpeg" alt="Anjay" />
+</div>
 
 ---
 
@@ -38,7 +41,7 @@
 
 **Ourin** is not just another Next.js template. It's a meticulously crafted architectural foundation designed to eliminate the repetitive setup phase of every new project. Whether you're building a SaaS product, a marketing site, or an internal tool, Ourin provides a rock-solid starting point that adheres to industry best practices.
 
-We believe developers should spend their time building features, not configuring build tools or copy-pasting utility functions from old projects. That's why Ourin comes pre-loaded with everything you need: a massive library of **145+ utility functions**, **15+ custom React hooks**, a **premium multi-font typography system**, and a collection of beautiful, reusable UI components.
+We believe developers should spend their time building features, not configuring build tools or copy-pasting utility functions from old projects. That's why Ourin comes pre-loaded with everything you need: a massive library of **185+ utility functions**, **20+ custom React hooks**, a **premium 16-font typography system**, example API routes, and a production-ready middleware.
 
 The entire codebase is strictly typed with **TypeScript 5**, ensuring type safety from the ground up. The styling is powered by **Tailwind CSS 4** with its new Oxide engine for blazing-fast builds and zero runtime overhead. And for UI components, we've integrated **Shadcn/UI**, giving you access to a world-class component library built on accessible Radix UI primitives.
 
@@ -52,13 +55,15 @@ The entire codebase is strictly typed with **TypeScript 5**, ensuring type safet
 -   **Zero-Runtime CSS**: Tailwind CSS 4's Oxide engine compiles all styles at build time, meaning no CSS-in-JS overhead.
 
 ### 🎨 World-Class Design System
--   **6-Font Typography**: A carefully curated font stack for every use case—display, body, serif, mono, handwriting, and UI.
+-   **16-Font Typography**: A carefully curated font stack for every use case—display, body, serif, mono, handwriting, and UI.
 -   **Glassmorphism & Gradients**: Pre-built CSS utilities for modern glass effects, text gradients, and shadow glows.
 -   **Dark Mode Built-In**: Seamless theme switching using `next-themes` with system preference detection and animated toggle.
 
 ### 🧰 Developer Experience
--   **145+ Utility Functions**: A categorized, documented library of helpers for strings, arrays, dates, numbers, colors, and more.
--   **15+ Custom Hooks**: Production-ready hooks for common state logic (debouncing, local storage, media queries, etc.).
+-   **185+ Utility Functions**: Categorized library for strings, arrays, dates, numbers, colors, async, crypto, browser detection, and more.
+-   **20+ Custom Hooks**: Production-ready hooks for debouncing, data fetching, countdown timers, network status, and more.
+-   **Example API Routes**: Health check, CRUD users endpoints with pagination and validation.
+-   **Middleware**: Pre-configured with security headers, CORS, logging, and auth patterns.
 -   **Strict TypeScript**: No `any` types. Full type safety across the entire project.
 
 ### 🧩 Premium UI Components

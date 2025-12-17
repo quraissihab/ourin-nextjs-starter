@@ -25,3 +25,11 @@ export { usePrevious } from './use-previous';
 export { useIntersectionObserver } from './use-intersection-observer';
 export { useHover } from './use-hover';
 export { useKeyboardShortcut } from './use-keyboard-shortcut';
+
+// New in v1.2
+export { useNetworkStatus } from './use-network-status';
+export { useFetch } from './use-fetch';
+export { useCountdown } from './use-countdown';
+export { useElementSize } from './use-element-size';
+export { useInterval } from './use-interval';
+
